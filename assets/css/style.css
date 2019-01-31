@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+header {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5T6yllcHbhik0XXmCk3zmXmCTS1qV4bP5GDvEoLczwTvgrb8HMQ");
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-bottom: 20px;
+    width:960px;  
+    position: relative;  
+    text-align: center;
+    color: white;   
+  }
+.container {
+    margin-top:20px;
+    color: white;
+    background-color: black;
+}
+
+p {
+    color: white;
+}
+
+

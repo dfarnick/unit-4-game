@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SkullCrusher</title>
+    
+    <style type="text/css">
+
+    .skull-image {
+        width:100px;
+        height: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+    
+    <div id= "skulls">    
+
+    </div>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    <script type="text/javascript">
+       let targetNumber = 53;
+
+        $("#number-to-guess").text(targetNumber);
+        
+        let counter = 0;
+        let numberOptions = [10,5,3,7];
+
+        for (let i = 0; i < numberOptions.length; i++){
+
+            let imageSkull = $("<img>");
+
+            imageSkull.addclass("skull-image");
+
+            imageSkull.attr("src", "C:\Users\DAVE\Documents\codingBootcamp\homeworks\unit-4-game\assets\images\buttonimage.jpg");
+
+            imageSkull.attr("data-skullvalue", numberOptions[i]);
+
+            $("#skulls").append(imageSkull);
+        }
+
+
+        $(".skull-image").on("click",function() {
+
+            let skullValue = ($(this).attr("data-skullvalue"));
+            skullValue = parseInt(skullValue);
+            counter += skullValue;
+           
+            alert("Your new score is: " + counter);
+
+            if(counter === targetNumber){
+                alert("You Win!! Sucka!");
+            }
+            else if(counter >= targetNumber){
+                alert("You loooooOoooser!");
+            }
+        });
+        </script>
+
+</body>
+</html>
