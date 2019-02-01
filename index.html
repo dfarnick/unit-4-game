@@ -4,64 +4,47 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SkullCrusher</title>
-    
-    <style type="text/css">
-
-    .skull-image {
-        width:100px;
-        height: 100px;
-    }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-    
-    <div id= "skulls">    
-
+   <header>
+      <img id="contImage" src="assets/images/contImage.jpg">
+    </header>
+   <div>
+    <h1>One batch. Two Batch. Penny and Dime:</h1>
+   </div>
+   <div>
+		<img id="skullOne"   class="skull-image" src="assets/images/buttonimage.jpg">
+		<img id="skullTwo"   class="skull-image" src="assets/images/buttonimage.jpg">
+		<img id="skullThree" class="skull-image" src="assets/images/buttonimage.jpg">
+		<img id="skullFour"  class="skull-image" src="assets/images/buttonimage.jpg">
     </div>
-
+    <div class="valueToMatch">
+            <h2>Your Target:
+                <span id= "targetNumber"></span>
+            </h2>
+        </div>
+        <div class="valueTotal">
+                <h2>Shots Fired:
+                    <span id="total"></span>
+                </h2>
+            </div>
+        <div class="winsAndLosses">
+            <h2>Hits:
+                <span id= "wins"></span>
+                </br>
+                Misses: 
+                <span id= "losses"></span>
+            </h2>
+        </div>
+   
+    <div id="skulls">    
+           <!--<img class= "skull-image" src="assets/images/buttonimage.jpg" alt="skulls">-->
+    </div>
     
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-    <script type="text/javascript">
-       let targetNumber = 53;
-
-        $("#number-to-guess").text(targetNumber);
-        
-        let counter = 0;
-        let numberOptions = [10,5,3,7];
-
-        for (let i = 0; i < numberOptions.length; i++){
-
-            let imageSkull = $("<img>");
-
-            imageSkull.addclass("skull-image");
-
-            imageSkull.attr("src", "C:\Users\DAVE\Documents\codingBootcamp\homeworks\unit-4-game\assets\images\buttonimage.jpg");
-
-            imageSkull.attr("data-skullvalue", numberOptions[i]);
-
-            $("#skulls").append(imageSkull);
-        }
-
-
-        $(".skull-image").on("click",function() {
-
-            let skullValue = ($(this).attr("data-skullvalue"));
-            skullValue = parseInt(skullValue);
-            counter += skullValue;
-           
-            alert("Your new score is: " + counter);
-
-            if(counter === targetNumber){
-                alert("You Win!! Sucka!");
-            }
-            else if(counter >= targetNumber){
-                alert("You loooooOoooser!");
-            }
-        });
-        </script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets\javascript\game.js"></script>
 </body>
 </html>

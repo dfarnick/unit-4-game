@@ -1,27 +1,21 @@
 body {
     background-color: black;
+    color: white;
 }
 
-header {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5T6yllcHbhik0XXmCk3zmXmCTS1qV4bP5GDvEoLczwTvgrb8HMQ");
-    background-repeat: no-repeat;
+#contImage {
+    width:960px;
+    height:375px;
+    display:block;
+    position:relative;
+    padding:20px;
+    border:solid 10px white;
+    margin-bottom: 30px;
     margin-right: auto;
-    margin-left: auto;
-    border-style: solid;
-    border-bottom: 20px;
-    width:960px;  
-    position: relative;  
-    text-align: center;
-    color: white;   
-  }
-.container {
-    margin-top:20px;
-    color: white;
-    background-color: black;
-}
+    margin-left: auto;}
 
-p {
-    color: white;
-}
-
-
+.skull-image {
+    width:100px;
+    height: 100px;     
+    border:solid 3px white;}
+    
