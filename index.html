@@ -5,46 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SkullCrusher</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-   <header>
-      <img id="contImage" src="assets/images/contImage.jpg">
+    <header>
+        <img id="contImage" src="assets/images/contImage.jpg">
     </header>
-   <div>
-    <h1>One batch. Two Batch. Penny and Dime:</h1>
-   </div>
-   <div>
-		<img id="skullOne"   class="skull-image" src="assets/images/buttonimage.jpg">
-		<img id="skullTwo"   class="skull-image" src="assets/images/buttonimage.jpg">
-		<img id="skullThree" class="skull-image" src="assets/images/buttonimage.jpg">
-		<img id="skullFour"  class="skull-image" src="assets/images/buttonimage.jpg">
+    <div>
+        <h1>One batch. Two Batch. Penny and Dime:</h1>
+    </div>
+
+    <div>
+        <img id="skullOne" class="skull-image" src="assets/images/buttonimage.jpg">
+        <img id="skullTwo" class="skull-image" src="assets/images/buttonimage.jpg">
+        <img id="skullThree" class="skull-image" src="assets/images/buttonimage.jpg">
+        <img id="skullFour" class="skull-image" src="assets/images/buttonimage.jpg">
     </div>
     <div class="valueToMatch">
-            <h2>Your Target:
-                <span id= "targetNumber"></span>
-            </h2>
-        </div>
-        <div class="valueTotal">
-                <h2>Shots Fired:
-                    <span id="total"></span>
-                </h2>
-            </div>
-        <div class="winsAndLosses">
-            <h2>Hits:
-                <span id= "wins"></span>
-                </br>
-                Misses: 
-                <span id= "losses"></span>
-            </h2>
-        </div>
-   
-    <div id="skulls">    
-           <!--<img class= "skull-image" src="assets/images/buttonimage.jpg" alt="skulls">-->
+        <h2>Your Target:<span id="targetNumber"></span></h2>
     </div>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets\javascript\game.js"></script>
+    <div class="valueTotal">
+        <h2>Shots Fired:<span id="total"></span></h2>
+    </div>
+    <div class="winsAndLosses">
+        <h2>Hits:<span id="wins"></span>
+        </br>
+            Misses:<span id="losses"></span></h2>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="assets\javascript\game.js"></script>
 </body>
 </html>
